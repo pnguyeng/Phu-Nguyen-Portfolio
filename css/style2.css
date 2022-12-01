@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: auto;
+    display: grid;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+
+    grid-template-areas: "header1"
+    "header2"
+    "main1"
+    "main2"
+    "footer";
+    height: 100vh;
+}
+
+header{
+    background-color: white
+  }
+  
+  .header1 {
+    grid-area: header1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 2em;
+  }
+  
+  
+  nav {
+    grid-column: 2;
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+  }
+  
+  a {
+    font-size: 23px;
+  }
+
+  nav a:hover{
+    color: blue;
+    background-color: rgb(250, 239, 139);
+    border-radius: 0.1em;
+  }
+  
+  nav a:focus{
+    color:red;
+  }
+  
+ 
+.header2{
+    grid-area: header2;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    border-style: solid;
+    border-width: 3px;
+    background-color:rgb(41, 111, 232);
+}
+
+.center{
+    grid-column: 2;
+}
+
+p {
+    font-size: 50px;
+    color: white
+}
+
+.main1 {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.resumeheader{
+    grid-column: 1/4;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.resumebody{
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 2em;
+}
+
+h4 {
+    font-size: 30px;
+    text-decoration: underline;
+    margin-bottom: -1em;
+}
+
+h5 {
+    font-size: 25px;
+    margin-bottom: -1.5em;
+}
+
+h6 {
+    font-size: 18px;
+    margin-bottom: -0.5em;
+}
+
+h1 {
+    font-size: 30px;
+    margin-top: 3em;
+    margin-bottom: -1em;
+    text-decoration: underline;
+}
+
+.main2 {
+    grid-area: main2;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr
+}
+
+footer {
+    grid-area: footer;
+    border-style: solid;
+    border-width: 0.1px;
+    margin-top: 3em;
+    padding: 2.5em;
+    background-color: rgb(41, 111, 232);
+    border-style: solid;
+    border-width: 3px;
+ }
+
+.foot {
+    font-size: 23px;
+    color: white;
+}
+
+@media screen and (min-width:800px) {
+
+    p {
+        font-size: 60px;
+    }
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.resumebody{
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 2em;
+}
+
+h4 {
+    font-size: 50px;
+    text-decoration: underline;
+    margin-bottom: -1em;
+}
+
+h5 {
+    font-size: 35px;
+    margin-bottom: -1.5em;
+}
+
+h6 {
+    font-size: 25px;
+    margin-bottom: -0.5em;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 2em;
+    margin-bottom: -1em;
+    text-decoration: underline;
+}
+
+footer {
+    grid-area: footer;
+    border-style: solid;
+    border-width: 0.1px;
+    margin-top: 3em;
+    padding: 3em;
+    background-color: rgb(41, 111, 232);
+    border-style: solid;
+    border-width: 3px;
+ }
+
+.foot {
+    font-size: 30px;
+}
+}
+
+@media screen and (min-width:1100px) {
+    .header1 {
+     grid-area: header1;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+   }
+   
+   nav {
+     grid-column: 3;
+   }
+
+   a {
+    font-size: 28px;
+  }
+}
