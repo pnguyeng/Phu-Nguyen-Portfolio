@@ -89,7 +89,7 @@ h3 {
 .headshot {
   grid-row: 1;
   grid-column: 2/3;
-  height: 30em;
+  height: 70vh;
   background-image: url("../img/header.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -206,7 +206,7 @@ footer {
   .headshot {
     grid-row: 1;
     grid-column: 2/3;
-    height: 25em;
+    height: 70vh;
     background-image: url("../img/header.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -356,18 +356,18 @@ a {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 90px;
   font-weight: 900;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .headshot {
   grid-row: 2/3;
   grid-column: 3/5;
-  height: 35em;
+  height: 95vh;
   width: 90%;
   background-image: url("../img/header.jpg");
   background-repeat: no-repeat;
